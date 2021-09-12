@@ -7,7 +7,12 @@ import { ShoppingCartService } from 'src/app/shared/services/shopping-cart.servi
 
 @Component({
   selector: 'app-productos',
-  templateUrl: './productos.component.html',
+  template: `
+    <section class="productos">
+    <app-producto
+    (addToCartClick) = "addToCart($event)"
+    [producto]="producto" *ngFor="let producto of productos"></app-producto>
+  </section>`,
   styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent implements OnInit {
