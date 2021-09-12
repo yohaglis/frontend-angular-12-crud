@@ -1,4 +1,4 @@
-import { ShoppingCartService } from '../services/shopping-cart.service';
+import { ShoppingCartService } from '../../services/shopping-cart.service';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-header',
   template:  `<mat-toolbar color="primary">
   <span> Vimak tienda online</span>
-  <span>{{quantity$ | async | json}}</span>
+  Quantity:<span>{{quantity$ | async | json}}</span>
+  Total:<span>{{total$ | async | json}}</span>
+  Cart:<span>{{cart$ | async | json}}</span>
 </mat-toolbar>`,
   styleUrls: ['./header.component.scss']
 })

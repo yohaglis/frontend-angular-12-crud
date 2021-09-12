@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { HeaderComponent } from './shared/layout/header.component';
+import { HeaderComponent } from './shared/layout/header/header.component';
 import { MaterialModule } from './shared/material/material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';

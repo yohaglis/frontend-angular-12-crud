@@ -67,11 +67,11 @@ updateCart(producto: Producto): void{
   }
 
   private calcTotalProductos(): void{
-    const total = this.productos.reduce( (acc, prod) => acc += prod.price, 0)
+    const total = this.productos.reduce( (acc, prod) => acc += prod.price, 0);
     this.totalSubject.next(total);
   }
   private quantityProductos(): void{
-    const quantity = this.productos.length
+    const quantity = this.productos.length;
     this.quantitySubject.next(quantity);
   }
 
