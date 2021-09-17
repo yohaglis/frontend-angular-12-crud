@@ -1,45 +1,45 @@
 {
-    "historias": [
+    "stores": [
       {
         "id": 1,
         "name": "Park Row en Beekman St",
         "address": "38 Park Row",
-        "ciudad": "Nueva York",
+        "city": "Nueva York",
         "openingHours": "10:00 - 14:00 y 17:00 - 20:30"
       },
       {
         "id": 2,
-        "nombre": "Tienda Alcalá",
-        "dirección": "Calle de Alcalá, 21",
-        "ciudad": "Madrid",
+        "name": "Tienda Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
         "openingHours": "10:00 - 14:00 y 17:00 - 20:30"
       },
       {
         "id": 3,
         "name": "Chambers y West Broadway",
         "address": "125 Chambers Street",
-        "ciudad": "Nueva York",
+        "city": "Nueva York",
         "openingHours": "10:00 - 14:00 y 17:00 - 20:30"
       },
       {
         "id": 4,
-        "nombre": "Covent Garden - Russell St",
-        "dirección": "10 Russell Street",
-        "ciudad": "Londres",
+        "name": "Covent Garden - Russell St",
+        "address": "10 Russell Street",
+        "city": "Londres",
         "openingHours": "10:00 - 14:00 y 17:00 - 20:30"
       },
       {
         "id": 5,
-        "nombre": "Monmouth St",
+        "name": "Monmouth St",
         "address": "11 Monmouth Street",
-        "ciudad": "Londres",
+        "city": "Londres",
         "openingHours": "10:00 - 14:00 y 17:00 - 20:30"
       }
     ],
     "categorías": [
       {
         "id": 1,
-        "nombre": "Libros"
+        "name": "Libros"
       },
       {
         "id": 2,

@@ -1,22 +1,19 @@
 import { EventEmitter } from '@angular/core';
-import { Component, Input, Output, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, Output} from '@angular/core';
 import { Producto } from '../interfaces/producto.interface';
 
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
-  styleUrls: ['./producto.component.scss']
+  styleUrls: ['./producto.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProductoComponent implements OnInit {
-
+export class ProductoComponent {
   @Input() producto!: Producto;
   @Output() addToCartClick = new EventEmitter<Producto>()
-  constructor() { }
 
-  ngOnInit(): void {
-  }
   onClick(): void{
-    debugger
     this.addToCartClick.emit(this.producto);
   }
 }
