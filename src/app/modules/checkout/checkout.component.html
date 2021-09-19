@@ -18,7 +18,7 @@
       <mat-radio-button value="pickup" (change)="onPickupOrDelivery(false)"
         >Pickup</mat-radio-button
       >
-      <mat-radio-button value="delivery" (change)="onPickupOrDelivery(true)"
+      <mat-radio-button class="pl10" value="delivery" (change)="onPickupOrDelivery(true)"
         >Delivery</mat-radio-button
       >
     </mat-radio-group>
@@ -58,6 +58,7 @@
     </mat-form-field>
   </form>
 </div>
+<app-details></app-details>
 <div class="container-button">
   <button [disabled]="" mat-raised-button color="primary" type="submit">
     Checkout

@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Subject } from "rxjs";
+import { BehaviorSubject} from "rxjs";
 import { Observable } from "rxjs";
 import { Producto} from "src/app/modules/productos/interfaces/producto.interface";
 
@@ -20,9 +20,9 @@ export class ShoppingCartService{
  * @private
  * @memberof ShoppingCartService
  */
-  private cartSubject = new Subject<Producto[]>();
-  private totalSubject = new Subject<number>();
-  private quantitySubject = new Subject<number>();
+  private cartSubject = new BehaviorSubject<Producto[]>([]);
+  private totalSubject = new BehaviorSubject<number>(0);
+  private quantitySubject = new BehaviorSubject<number>(0);
 
 
 /**
@@ -62,16 +62,21 @@ updateCart(producto: Producto): void{
    * @memberof ShoppingCartService
    */
   private addToCart(producto: Producto): void{
-    this.productos.push(producto);
+     const isProductInCart = this.productos.find(({id}) => id === producto.id )
+    if(isProductInCart){
+      isProductInCart.qty += 1;
+    }else{
+      this.productos.push({...producto, qty: 1});
+    }
     this.cartSubject.next(this.productos);
   }
 
   private calcTotalProductos(): void{
-    const total = this.productos.reduce( (acc, prod) => acc += prod.price, 0);
+    const total = this.productos.reduce( (acc, prod) => acc += (prod.price * prod.qty), 0);
     this.totalSubject.next(total);
   }
   private quantityProductos(): void{
-    const quantity = this.productos.length;
+    const quantity = this.productos.reduce( (acc, prod) => acc += prod.qty, 0);
     this.quantitySubject.next(quantity);
   }
 
