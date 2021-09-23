@@ -10,37 +10,30 @@
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-width: 300px;
-  margin: 5px 20px 5px 20px; // t-r-b-l
-}
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   min-width: 300px;
+//   margin: 5px 20px 5px 20px; // t-r-b-l
+// }
 
-.example-header {
-  min-height: 64px;
-  padding: 8px 24px 0;
-}
-
-.mat-form-field {
-  font-size: 14px;
-  width: 100%;
-}
+// .example-header {
+//   min-height: 64px;
+//   padding: 8px 24px 0;
+// }
 
 .mat-table {
   overflow: auto;
   width: 100%;
 }
 
-.mat-row:nth-child(even){
-  background-color:rgb(250, 212, 212)
-}
+// .mat-row:nth-child(even){
+//   background-color:rgb(250, 212, 212)
+// }
 
-.mat-row:nth-child(odd){
-  background-color:rgb(247, 241, 241)
-}
+// .mat-row:nth-child(odd){
+//   background-color:rgb(247, 241, 241)
+// }
 
-.encabezado{
-    background-color: lightcoral;
-}
+
 

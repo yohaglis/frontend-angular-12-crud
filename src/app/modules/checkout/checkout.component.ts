@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
   model = {
-    name: 'Dominicode',
+    name: '',
+    mail:'',
     store: '',
-    shippingAddress: 'Medrano 610',
-    city:'Argentina'
+    shippingAddress: '',
+    city:''
   }
 
   stores = [

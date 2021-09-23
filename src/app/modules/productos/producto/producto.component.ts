@@ -2,6 +2,8 @@ import { EventEmitter } from '@angular/core';
 import { ChangeDetectionStrategy } from '@angular/core';
 import { Component, Input, Output} from '@angular/core';
 import { Producto } from '../interfaces/producto.interface';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 @Component({
   selector: 'app-producto',

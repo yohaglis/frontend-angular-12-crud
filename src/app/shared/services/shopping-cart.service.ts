@@ -48,7 +48,6 @@ export class ShoppingCartService{
  * @memberof ShoppingCartService
  */
 updateCart(producto: Producto): void{
-  debugger
   this.addToCart(producto);
   this.quantityProductos();
   this.calcTotalProductos();

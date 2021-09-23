@@ -1,11 +1,14 @@
 .card {
   margin: 5px;
   min-height: 180px;
-  min-width: 400px;
-  max-width: 400px;
+  min-width: 250px;
+  max-width: 250px;
   height: 100%;
  }
-
  button{
    width: 100%;
  }
+.pricetag{
+  text-align: right;
+  color: #f44336;
+}

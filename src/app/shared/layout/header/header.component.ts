@@ -3,16 +3,11 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  template:  `<mat-toolbar color="primary">
-    <a [routerLink]="['/']"><span>Vimak</span></a>
-    <span class="spacer"></span>
-    <app-cart class="mouseHover" (click)="goToCheckout()"></app-cart>
-    </mat-toolbar>`,
-  styleUrls: ['./header.component.scss']
+  templateUrl: './header.component.html',
+  styleUrls: []
 })
 export class HeaderComponent  {
   constructor(private _router: Router){
-
   }
   goToCheckout(): void{
     this._router.navigate(['/checkout']);

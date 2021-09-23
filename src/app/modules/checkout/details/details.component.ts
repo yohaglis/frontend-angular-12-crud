@@ -5,11 +5,7 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { ShoppingCartService } from 'src/app/shared/services/shopping-cart.service';
 import { Producto } from 'src/app/modules/productos/interfaces/producto.interface';
-
-const NAMES: string[] = [
-  'Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack', 'Charlotte', 'Theodore', 'Isla', 'Oliver',
-  'Isabella', 'Jasper', 'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'
-];
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @Component({
   selector: 'app-details',
