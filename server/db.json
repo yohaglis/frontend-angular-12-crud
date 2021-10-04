@@ -57,7 +57,8 @@
         "price": 45,
         "description": "Aprenda los conceptos básicos y más de TypeScript, un superconjunto popular del lenguaje JavaScript que agrega soporte para escritura estática. TypeScript combina las características de escritura de C # o Java.",
         "categoryId": 1,
-        "stock": 10
+        "stock": 10,
+        "imagen":"./assets/img/productos/aro-luz-led.jpg"
       },
       {
         "id": 2,
@@ -65,7 +66,8 @@
         "price": 5,
         "description": "En Hackeando del cerebro de tus compradores, Corti nos revela cómo muchas compañías crean productos digitales o procesos de venta capaces de conectar con la psicología del comprador.",
         "categoryId": 1,
-        "stock": 10
+        "stock": 10,
+        "imagen":"./assets/img/productos/parlante.jpg"
       },
       {
         "id": 3,
@@ -73,7 +75,8 @@
         "price": 17,
         "description": "En este libro, el lector podrá enfocarse en un concepto de Angular en profundidad.",
         "categoryId": 1,
-        "stock": 10
+        "stock": 10,
+        "imagen":""
       },
       {
         "id": 4,
@@ -81,7 +84,8 @@
         "price": 19,
         "description": "Ideal para teléfonos inteligentes y tabletas Android y cámaras MIL",
         "categoryId": 2,
-        "stock": 10
+        "stock": 10,
+        "imagen":""
       },
       {
         "id": 5,
@@ -89,7 +93,9 @@
         "price": 399,
         "description": "Video 5K - Grabe videos asombrosos con una resolución de hasta 5K, perfecta para mantener los detalles incluso al hacer zoom",
         "categoryId": 2,
-        "stock": 10
+        "stock": 10,
+        "imagen":""
+
       },
       {
         "id": 6,
@@ -97,7 +103,8 @@
         "price": 7,
         "description": "Cable HDMI A macho a macho: admite Ethernet, 3D, vídeo 4K y canal de retorno de audio (ARC)",
         "categoryId": 2,
-        "stock": 10
+        "stock": 10,
+        "imagen":""
       },
       {
         "id": 7,
@@ -105,7 +112,8 @@
         "price": 32,
         "description": "El receptor USB está convenientemente ubicado en la caja, solapa superior",
         "categoryId": 3,
-        "stock": 10
+        "stock": 10,
+        "imagen":""
       },
       {
         "id": 8,
@@ -113,7 +121,8 @@
         "price": 20,
         "description": "Plug & play. Fácil de usar, alimentado por puerto USB. No se necesita controlador externo ni alimentación. Simplemente conéctelo a su puerto USB y se detectará el controlador de DVD",
         "categoryId": 3,
-        "stock": 10
+        "stock": 10,
+        "imagen":""
       }
     ],
     "pedidos": [

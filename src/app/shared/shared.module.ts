@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material/material.module';
 import { SpinnerComponent } from './spinner/spinner.component';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
 
 
@@ -29,7 +30,8 @@ SpinnerComponent
     CommonModule,
     RouterModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    PerfectScrollbarModule
   ],
   exports: [
     components,
@@ -37,7 +39,8 @@ SpinnerComponent
     AccordionLinkDirective,
     AccordionDirective,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    PerfectScrollbarModule
    ],
   providers: [ MenuItems ]
 })

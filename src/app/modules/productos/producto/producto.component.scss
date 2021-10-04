@@ -1,14 +1,12 @@
-.card {
-  margin: 5px;
-  min-height: 180px;
-  min-width: 250px;
-  max-width: 250px;
-  height: 100%;
+ .flex-inline{
+   display: flex;
+   justify-content: space-around;
+   margin: 10px;
  }
- button{
-   width: 100%;
+ .pricetag{
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  color: #6DCEB9;
  }
-.pricetag{
-  text-align: right;
-  color: #f44336;
-}
+

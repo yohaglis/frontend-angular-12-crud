@@ -207,7 +207,9 @@ html body {
   .p-l-0 {
     padding-left: 0px;
   }
-
+  .p-l-3 {
+    padding-left: 3px;
+  }
   .p-l-10 {
     padding-left: 10px;
   }
@@ -695,7 +697,7 @@ Mat card
 .mat-card {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05) !important;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05) !important;
-  margin: 15px;
+  margin: 0px;
   padding: 0px !important;
   border-radius: $radius;
 
@@ -703,17 +705,21 @@ Mat card
     font-size: 1rem;
     line-height: 23px;
     padding: 10px;
+    margin-bottom: 0px !important;
   }
   .mat-card-image {
     width: calc(100% + 0px);
-    margin: 0 0px 0px 0px;
+    margin: 0px !important;
+    // height: 100%;
+    // min-height: 284px;
+    // max-height: 284px;
   }
   .mat-card-header {
     padding: 9px;
     border-radius: $radius $radius 0 0;
     .mat-card-title {
       margin-bottom: 2px;
-      font-size: 17px;
+      font-size: 16px;
     }
     .mat-card-subtitle,
     .mat-card-subtitle:not(:first-child) {
@@ -731,7 +737,8 @@ Mat card
     }
   }
   .mat-card-title {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     margin-bottom: 5px;
   }
   .mat-card-subtitle {

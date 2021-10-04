@@ -16,6 +16,7 @@ File: scss
  *	7. Widgets
  *	8. Custom Templates
  */
+@import "~perfect-scrollbar/css/perfect-scrollbar.css";
 
 @import 'variable';
 
@@ -25,5 +26,6 @@ File: scss
 @import 'pages';
 @import 'sidebar';
 @import 'responsive';
+@import 'carrousel';
 
 @import "../styles/icons/material-design-iconic-font/css/materialdesignicons.min.css";

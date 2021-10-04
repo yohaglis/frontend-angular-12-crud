@@ -1,4 +1,3 @@
-<div class="container">
     <mat-form-field appearance="standard" >
       <mat-label>Filter</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Escriba algo para filtrar..." #input>
@@ -40,7 +39,6 @@
     </table>
     <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
   </div>
-</div>
 <div class="container-total">
   <p class="total">
     <strong>Total:<span>{{total$ | async | currency}}</span></strong>

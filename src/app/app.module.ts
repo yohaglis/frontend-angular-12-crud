@@ -7,6 +7,14 @@ import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+
+const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
+  suppressScrollX: true
+};
 
 
 @NgModule({
@@ -20,11 +28,16 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MaterialModule,
     HttpClientModule,
     FlexLayoutModule,
-    SharedModule
+    SharedModule,
+    NgbModule,
+    PerfectScrollbarModule
   ],
   providers: [
-
+   {
+    provide: PERFECT_SCROLLBAR_CONFIG, useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+   }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [PerfectScrollbarModule]
 })
 export class AppModule { }

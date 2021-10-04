@@ -51,8 +51,11 @@ a{
 .pt10{
   padding-top: 10px !important;
 }
+.violeta{
+  background-color: #483d8b;
+}
 .white{
-  background-color: white;
+  background-color: #fff;
 }
 .border-colores{
   padding: 8px 0;
@@ -60,10 +63,6 @@ a{
   border-top-style: solid;
   border-image: linear-gradient(
 139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
-}
-
-img{
-  width: 166px;
 }
 /*******************
  Topbar

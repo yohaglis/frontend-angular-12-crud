@@ -1,10 +1,10 @@
 <div class="main-container">
-  <mat-toolbar class="topbar telative white border-colores">
+  <mat-toolbar color="primary" class="topbar telative">
     <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
-      <mat-icon>menu</mat-icon>
+      <mat-icon style="color:white">menu</mat-icon>
     </button>
     <div class="navbar-header">
-          <a [routerLink]="['/']"> <img class="pt10" src="./assets/img/logo-vimak.png" alt=""></a>
+          <a [routerLink]="['/']"> <img src="./assets/img/logo-vimak.png" alt=""></a>
     </div>
     <span fxFlex></span>
     <app-header></app-header>
@@ -14,11 +14,32 @@
               <app-sidebar></app-sidebar>
       </mat-sidenav>
       <mat-sidenav-content class="page-wrapper">
-              <div class="page-content">
+              <div [perfectScrollbar]=""  class="page-content side-content">
+                <!-- <ngb-carousel>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img src="assets/img/big/img1.jpg" alt="Angular Carousel 1">
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>Title Goes Here</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </ng-template>
+                  <ng-template ngbSlide>
+                    <div class="picsum-img-wrapper">
+                      <img src="assets/img/big/img2.jpg" alt="Angular Carousel 2">
+                    </div>
+                    <div class="carousel-caption">
+                      <h3>Title Goes Here</h3>
+                      <p>Consectetur tortor volutpat pretium.</p>
+                    </div>
+                  </ng-template>
+                </ngb-carousel> -->
                       <router-outlet><app-spinner></app-spinner></router-outlet>
               </div>
       </mat-sidenav-content>
    </mat-sidenav-container>
+
 </div>
 
 
