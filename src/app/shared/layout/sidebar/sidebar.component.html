@@ -1,10 +1,10 @@
 <mat-nav-list appAccordion class="p-t-20">
   <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" routerLinkActive="selected" group="{{menuitem.state}}">
       <a class="" appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
-          <mat-icon>{{ menuitem.icon }}</mat-icon>
-          <span>{{ menuitem.name }}</span>
-          <span fxFlex></span>
-          <!-- <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badged">{{ badge.value }}</span>  -->
-      </a>
+        <mat-icon>{{ menuitem.icon }}</mat-icon>
+        <span>{{ menuitem.name }}</span>
+        <span fxFlex></span>
+        <!-- <span class="label label-{{ badge.type }}" *ngFor="let badge of menuitem.badged">{{ badge.value }}</span>  -->
+    </a>
   </mat-list-item>
 </mat-nav-list>

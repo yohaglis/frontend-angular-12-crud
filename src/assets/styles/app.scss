@@ -710,9 +710,8 @@ Mat card
   .mat-card-image {
     width: calc(100% + 0px);
     margin: 0px !important;
-    // height: 100%;
-    // min-height: 284px;
-    // max-height: 284px;
+    max-width: 250px;
+    min-width: 250px;
   }
   .mat-card-header {
     padding: 9px;

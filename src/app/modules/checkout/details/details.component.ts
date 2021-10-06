@@ -36,7 +36,6 @@ export class DetailsComponent implements AfterViewInit {
           x => {
     this.dataSource = new MatTableDataSource();
     this.dataSource.data = x;
-    console.log(this.dataSource.data);
   },
   error => {
     console.log('There was an error while retrieving Usuarios!' + error);
